@@ -1,0 +1,12 @@
+CORRELATION ANALYSIS INTERPRETATION
+===================================
+
+Key Correlations:
+1. Throughput vs CPU Usage: -0.857
+2. Throughput vs Latency: -0.865
+3. CPU Usage vs Memory: 0.833
+
+Interpretation:
+- Strong negative correlation between throughput and CPU usage indicates efficiency
+- Negative correlation between throughput and latency is expected
+- Positive correlation between CPU and memory usage suggests resource coupling

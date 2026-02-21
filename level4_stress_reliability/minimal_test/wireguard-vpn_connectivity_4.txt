@@ -1,0 +1,24 @@
+=== Connectivity Test Results ===
+Test ID: 4
+Container: wireguard-vpn
+Target: 172.17.0.1
+Time: Rab 22 Okt 2025 08:53:26 WIB
+
+1. Testing ping...
+PING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.062 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.119 ms
+
+--- 172.17.0.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1045ms
+rtt min/avg/max/mdev = 0.062/0.090/0.119/0.028 ms
+
+2. Testing port connectivity...
+
+3. Testing iperf3 help...
+Usage: iperf3 [-s|-c host] [options]
+       iperf3 [-h|--help] [-v|--version]
+
+Server or Client:
+  -p, --port      #         server port to listen on/connect to
+

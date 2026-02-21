@@ -1,0 +1,4 @@
+protocol,max_theoretical_connections,practical_limit_80pct_cpu,throughput_at_scale_mbps,estimated_users_100mbps
+wireguard,500,80,650,650
+openvpn,100,25,80,80
+ipsec,200,45,280,280

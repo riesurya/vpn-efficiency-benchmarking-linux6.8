@@ -1,0 +1,52 @@
+Ultra Simple Test: wireguard
+Start: Rab 22 Okt 2025 09:05:14 WIB
+========================
+Connectivity: OK
+--- Test 1 ---
+SUCCESS: [0;34m[ULTRA][0m Testing multiple approaches for wireguard-vpn
+[0;34m[ULTRA][0m --- Approach 1: Direct exec ---
+[0;34m[ULTRA][0m TEST 1: Direct execution for wireguard-vpn
+[0;34m[ULTRA][0m Command: docker exec wireguard-vpn iperf3 -c 172.17.0.1 -p 5201 -t 3 -J
+[0;34m[ULTRA][0m Waiting... 1s
+[0;34m[ULTRA][0m Waiting... 2s
+[0;34m[ULTRA][0m Waiting... 3s
+[0;32m[ULTRA][0m Output file created: 3949 bytes
+[0;32m[ULTRA][0m JSON content detected
+[0;32m[ULTRA][0m ✅ TEST 1 SUCCESS: 26316.13 Mbps
+26316.13 Mbps
+--- Test 2 ---
+SUCCESS: [0;34m[ULTRA][0m Testing multiple approaches for wireguard-vpn
+[0;34m[ULTRA][0m --- Approach 1: Direct exec ---
+[0;34m[ULTRA][0m TEST 1: Direct execution for wireguard-vpn
+[0;34m[ULTRA][0m Command: docker exec wireguard-vpn iperf3 -c 172.17.0.1 -p 5201 -t 3 -J
+[0;34m[ULTRA][0m Waiting... 1s
+[0;34m[ULTRA][0m Waiting... 2s
+[0;34m[ULTRA][0m Waiting... 3s
+[0;32m[ULTRA][0m Output file created: 3956 bytes
+[0;32m[ULTRA][0m JSON content detected
+[0;32m[ULTRA][0m ✅ TEST 1 SUCCESS: 21296.32 Mbps
+21296.32 Mbps
+
+=== RESULTS ===
+Average: 10648.16 Mbps
+All: [0;34m[ULTRA][0m Testing multiple approaches for wireguard-vpn
+[0;34m[ULTRA][0m --- Approach 1: Direct exec ---
+[0;34m[ULTRA][0m TEST 1: Direct execution for wireguard-vpn
+[0;34m[ULTRA][0m Command: docker exec wireguard-vpn iperf3 -c 172.17.0.1 -p 5201 -t 3 -J
+[0;34m[ULTRA][0m Waiting... 1s
+[0;34m[ULTRA][0m Waiting... 2s
+[0;34m[ULTRA][0m Waiting... 3s
+[0;32m[ULTRA][0m Output file created: 3949 bytes
+[0;32m[ULTRA][0m JSON content detected
+[0;32m[ULTRA][0m ✅ TEST 1 SUCCESS: 26316.13 Mbps
+26316.13 [0;34m[ULTRA][0m Testing multiple approaches for wireguard-vpn
+[0;34m[ULTRA][0m --- Approach 1: Direct exec ---
+[0;34m[ULTRA][0m TEST 1: Direct execution for wireguard-vpn
+[0;34m[ULTRA][0m Command: docker exec wireguard-vpn iperf3 -c 172.17.0.1 -p 5201 -t 3 -J
+[0;34m[ULTRA][0m Waiting... 1s
+[0;34m[ULTRA][0m Waiting... 2s
+[0;34m[ULTRA][0m Waiting... 3s
+[0;32m[ULTRA][0m Output file created: 3956 bytes
+[0;32m[ULTRA][0m JSON content detected
+[0;32m[ULTRA][0m ✅ TEST 1 SUCCESS: 21296.32 Mbps
+21296.32 Mbps

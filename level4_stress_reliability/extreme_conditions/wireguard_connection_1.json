@@ -1,0 +1,180 @@
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"127.0.0.1",
+				"local_port":	48154,
+				"remote_host":	"127.0.0.1",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.19.1",
+		"system_info":	"Linux a66dc43db8c7 6.8.0-85-generic #85-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 18 15:26:59 UTC 2025 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 22 Oct 2025 11:14:17 UTC",
+			"timesecs":	1761131657
+		},
+		"connecting_to":	{
+			"host":	"127.0.0.1",
+			"port":	5201
+		},
+		"cookie":	"sdl7vwz5dvn5r3pm6zrbcyk7mto4ztpvkrds",
+		"tcp_mss_default":	32768,
+		"target_bitrate":	0,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	16384,
+		"rcvbuf_actual":	131072,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	6,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	0,
+			"bidir":	0,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	5,
+					"start":	0,
+					"end":	1.000681,
+					"seconds":	1.0006810426712036,
+					"bytes":	3580755968,
+					"bits_per_second":	28626551840.667084,
+					"retransmits":	0,
+					"snd_cwnd":	2095456,
+					"snd_wnd":	-1,
+					"rtt":	29,
+					"rttvar":	4,
+					"pmtu":	65535,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000681,
+				"seconds":	1.0006810426712036,
+				"bytes":	3580755968,
+				"bits_per_second":	28626551840.667084,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	1.000681,
+					"end":	2.000705,
+					"seconds":	1.0000239610672,
+					"bytes":	3461349376,
+					"bits_per_second":	27690131522.897812,
+					"retransmits":	0,
+					"snd_cwnd":	2095456,
+					"snd_wnd":	-1,
+					"rtt":	48,
+					"rttvar":	9,
+					"pmtu":	65535,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	1.000681,
+				"end":	2.000705,
+				"seconds":	1.0000239610672,
+				"bytes":	3461349376,
+				"bits_per_second":	27690131522.897812,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	3.000853,
+					"end":	3.007225,
+					"seconds":	0.006372000090777874,
+					"bytes":	3583246336,
+					"bits_per_second":	4498739843002.8184,
+					"retransmits":	0,
+					"snd_cwnd":	2226422,
+					"snd_wnd":	-1,
+					"rtt":	42,
+					"rttvar":	14,
+					"pmtu":	65535,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	3.000853,
+				"end":	3.007225,
+				"seconds":	0.006372000090777874,
+				"bytes":	3583246336,
+				"bits_per_second":	4498739843002.8184,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	5,
+					"start":	0,
+					"end":	3.007225,
+					"seconds":	3.007225,
+					"bytes":	10917249024,
+					"bits_per_second":	29042719514.502571,
+					"retransmits":	0,
+					"max_snd_cwnd":	2226422,
+					"max_snd_wnd":	0,
+					"max_rtt":	48,
+					"min_rtt":	29,
+					"mean_rtt":	39,
+					"sender":	true
+				},
+				"receiver":	{
+					"socket":	5,
+					"start":	0,
+					"end":	3.007225,
+					"seconds":	3.007225,
+					"bytes":	0,
+					"bits_per_second":	0,
+					"sender":	true
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	3.007225,
+			"seconds":	3.007225,
+			"bytes":	10917249024,
+			"bits_per_second":	29042719514.502571,
+			"retransmits":	0,
+			"sender":	true
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	3.007225,
+			"seconds":	3.007225,
+			"bytes":	0,
+			"bits_per_second":	0,
+			"sender":	true
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	100.20485263376257,
+			"host_user":	1.0019228621124354,
+			"host_system":	99.202929771650147,
+			"remote_total":	0,
+			"remote_user":	0,
+			"remote_system":	0
+		},
+		"sender_tcp_congestion":	"cubic"
+	},
+	"error":	"interrupt - the client has terminated by signal Terminated(15)"
+}

@@ -1,0 +1,7 @@
+Connection Establishment Times for openvpn
+==========================================
+Attempt 1: .101482615s
+Attempt 2: .088514605s
+Attempt 3: .101489379s
+Attempt 4: .097969644s
+Attempt 5: .112085111s

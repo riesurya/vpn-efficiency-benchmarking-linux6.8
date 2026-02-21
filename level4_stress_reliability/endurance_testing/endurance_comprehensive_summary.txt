@@ -1,0 +1,27 @@
+=== VPN ENDURANCE TESTING COMPREHENSIVE SUMMARY ===
+Generated: Rab 22 Okt 2025 17:56:01 WIB
+=================================================
+
+=== wireguard ===
+Total tests: 9
+Success rate: 100.00%
+Average throughput: 23697.09 Mbps
+Average latency: 41.89 ms
+
+=== openvpn ===
+Total tests: 9
+Success rate: 100.00%
+Average throughput: 24970.63 Mbps
+Average latency: 59.83 ms
+
+=== ipsec ===
+Total tests: 9
+Success rate: 100.00%
+Average throughput: 24907.06 Mbps
+Average latency: 66.47 ms
+
+=== METHODOLOGY ===
+Test Duration: 120 seconds per protocol
+Metrics: Throughput, Latency, Memory, CPU
+Interval: 5 seconds between tests
+Success Criteria: Throughput > 10 Mbps

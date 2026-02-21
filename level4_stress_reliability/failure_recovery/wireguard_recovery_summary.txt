@@ -1,0 +1,10 @@
+Failure Recovery Summary: wireguard
+Test Time: Rab 22 Okt 2025 17:57:27 WIB
+=============================
+Pre-restart: NETWORK HEALTHY
+Restart Duration: 11s
+Post-restart: NETWORK RECOVERED
+Recovery Status: FULL
+
+=== FINAL ASSESSMENT ===
+RESULT: SUCCESS

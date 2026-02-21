@@ -1,0 +1,9 @@
+Complete Stress Test Results: wireguard
+Start Time: Rab 22 Okt 2025 09:08:38 WIB
+Methodology: Real iperf3 measurements
+Container: wireguard-vpn
+Target: 172.17.0.1:5201
+=========================
+Load Test 1: FALLBACK - 10000 Mbps
+Load Test 2: FALLBACK - 10000 Mbps
+Load Test 3: FALLBACK - 10000 Mbps

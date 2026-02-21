@@ -1,0 +1,35 @@
+Minimal Working Test Results: wireguard
+Start Time: Rab 22 Okt 2025 08:53:17 WIB
+Container: wireguard-vpn
+Target: 172.17.0.1:5201
+=========================
+Approach 1 (Interactive): [0;34m[MINIMAL][0m Approach 1: Interactive docker exec...
+[0;34m[MINIMAL][0m Executing: docker exec wireguard-vpn bash -c 'iperf3 -c 172.17.0.1 -p 5201 -t 3 -J'
+[0;34m[MINIMAL][0m Command completed, checking output...
+[0;32m[MINIMAL][0m Interactive approach: 26107.84 Mbps
+26107.84 Mbps
+Approach 2 (Echo Pipe): [0;34m[MINIMAL][0m Approach 2: Echo pipe method...
+[0;32m[MINIMAL][0m Echo pipe approach: 26103.25 Mbps
+26103.25 Mbps
+Approach 3 (Script File): [0;34m[MINIMAL][0m Approach 3: Script file method...
+[0;32m[MINIMAL][0m Script file approach: 26344.12 Mbps
+26344.12 Mbps
+Approach 4 (Connectivity): Basic tests completed
+Approach 5 (Simple Speed): [0;34m[MINIMAL][0m Approach 5: Simple speed test...
+[0;34m[MINIMAL][0m Simple speed test completed
+50 Mbps (estimated)
+
+=== SUMMARY ===
+Successful approaches: 5/5
+Approaches used: interactive echo_pipe script_file connectivity simple_speed
+Average throughput (real): 8781.37 Mbps
+Real results: [0;34m[MINIMAL][0m Approach 1: Interactive docker exec...
+[0;34m[MINIMAL][0m Executing: docker exec wireguard-vpn bash -c 'iperf3 -c 172.17.0.1 -p 5201 -t 3 -J'
+[0;34m[MINIMAL][0m Command completed, checking output...
+[0;32m[MINIMAL][0m Interactive approach: 26107.84 Mbps
+26107.84 [0;34m[MINIMAL][0m Approach 2: Echo pipe method...
+[0;32m[MINIMAL][0m Echo pipe approach: 26103.25 Mbps
+26103.25 [0;34m[MINIMAL][0m Approach 3: Script file method...
+[0;32m[MINIMAL][0m Script file approach: 26344.12 Mbps
+26344.12 Mbps
+End Time: Rab 22 Okt 2025 08:53:27 WIB

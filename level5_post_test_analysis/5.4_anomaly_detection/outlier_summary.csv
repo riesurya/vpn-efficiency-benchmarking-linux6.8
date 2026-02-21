@@ -1,0 +1,4 @@
+protocol,throughput_outliers,latency_outliers,cpu_outliers,total_outliers,outlier_percentage
+wireguard,7,6,5,18,6.0
+openvpn,8,8,8,24,8.0
+ipsec,5,4,3,12,4.0

@@ -1,0 +1,39 @@
+VPN PROTOCOL STATISTICAL ANALYSIS SUMMARY
+========================================
+
+DESCRIPTIVE STATISTICS
+=====================
+            n    mean  median    std     min     max     q25     q75
+protocol                                                            
+ipsec      30  477.16  482.25  36.65  415.70  554.63  443.52  502.83
+openvpn    30  316.82  318.94  27.56  241.41  376.59  306.28  328.59
+wireguard  30  842.79  841.25  41.94  763.75  928.96  817.09  867.03
+
+CONFIDENCE INTERVALS (95%)
+==========================
+ protocol  mean_throughput  n  std_error  ci_lower  ci_upper
+wireguard           842.79 30       7.66    827.78    857.80
+  openvpn           316.82 30       5.03    306.96    326.68
+    ipsec           477.16 30       6.69    464.05    490.28
+
+HYPOTHESIS TESTING RESULTS
+==========================
+ANOVA F-statistic: 1693.4956
+ANOVA P-value: 0.000000
+✓ Significant difference between protocols (p < 0.05)
+
+PAIRWISE COMPARISONS (Bonferroni corrected):
+• wireguard vs openvpn: 526.0 Mbps higher (p = 0.000000)
+• wireguard vs ipsec: 365.6 Mbps higher (p = 0.000000)
+• openvpn vs ipsec: 160.3 Mbps lower (p = 0.000000)
+
+KEY FINDINGS:
+• WireGuard shows highest mean throughput with tight confidence intervals
+• OpenVPN has lower throughput but good consistency
+• IPSec provides balanced performance between the two extremes
+• All protocols show statistically significant performance differences
+
+PRACTICAL IMPLICATIONS:
+• WireGuard is statistically superior for throughput performance
+• IPSec offers a good balance for enterprise environments
+• OpenVPN remains viable for compatibility-focused deployments

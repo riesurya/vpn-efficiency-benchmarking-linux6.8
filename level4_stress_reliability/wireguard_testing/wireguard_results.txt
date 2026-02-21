@@ -1,0 +1,20 @@
+Stress Test Results: wireguard
+Start Time: Rab 22 Okt 2025 17:18:21 WIB
+Container: wireguard-vpn
+Target: 172.17.0.1:5201
+Method: Direct execution with timeout
+=========================
+Load Test 1: REAL - 24511 Mbps
+Load Test 2: REAL - 23173 Mbps
+Load Test 3: REAL - 24919 Mbps
+
+=== LOAD TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 24201 Mbps
+All results: 24511 23173 24919 Mbps
+
+=== ENDURANCE TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 24345 Mbps
+All results: 25562 26137 21338 Mbps
+End Time: Rab 22 Okt 2025 17:19:10 WIB

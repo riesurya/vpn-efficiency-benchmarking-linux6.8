@@ -1,0 +1,13 @@
+PERFORMANCE MODELING SUMMARY
+===========================
+
+Key Performance Insights:
+• WireGuard shows minimal performance degradation under load
+• OpenVPN performance degrades significantly with increasing connections
+• IPSec provides balanced performance and scalability
+• CPU usage is the primary limiting factor for scalability
+
+Practical Recommendations:
+• Use WireGuard for high-connection scenarios
+• Consider IPSec for enterprise environments
+• Monitor OpenVPN CPU usage in production

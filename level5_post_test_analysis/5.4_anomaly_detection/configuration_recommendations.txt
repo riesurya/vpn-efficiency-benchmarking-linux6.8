@@ -1,0 +1,18 @@
+CONFIGURATION ISSUE DETECTION AND RECOMMENDATIONS
+=================================================
+
+Protocol: wireguard
+Risk Level: Low
+Common Issues: 5 known configuration problems
+Recommendations: Use automated key management, validate endpoint configuration
+
+Protocol: openvpn
+Risk Level: Low
+Common Issues: 12 known configuration problems
+Recommendations: Simplify TLS settings, optimize compression, verify certificate chains
+
+Protocol: ipsec
+Risk Level: Low
+Common Issues: 15 known configuration problems
+Recommendations: Standardize IKE proposals, simplify firewall rules, validate SA lifetimes
+

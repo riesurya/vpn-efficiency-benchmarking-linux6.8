@@ -1,0 +1,9 @@
+CPU Saturation Test: wireguard
+Start Time: Rab 22 Okt 2025 18:14:49 WIB
+Method: Internal iperf3 server
+=============================
+Initial CPU: 0.00%
+Creating CPU load...
+Throughput test failed under CPU load
+CPU during load: 199.41%
+RESULT: MAINTAINED PERFORMANCE

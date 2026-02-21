@@ -1,0 +1,23 @@
+=== VPN FAILURE RECOVERY COMPREHENSIVE SUMMARY ===
+Generated: Rab 22 Okt 2025 17:59:49 WIB
+=================================================
+
+=== wireguard ===
+Restart Duration: 11s
+Recovery Status: FULL
+RESULT: SUCCESS
+
+=== openvpn ===
+Restart Duration: 10s
+Recovery Status: FULL
+RESULT: SUCCESS
+
+=== ipsec ===
+Restart Duration: 10s
+Recovery Status: FULL
+RESULT: SUCCESS
+
+=== METHODOLOGY ===
+Test: Container restart and network recovery
+Metrics: Network connectivity, restart time, service recovery
+Success Criteria: Network functionality restored post-restart

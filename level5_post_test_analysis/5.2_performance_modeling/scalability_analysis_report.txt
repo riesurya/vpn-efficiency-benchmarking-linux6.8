@@ -1,0 +1,25 @@
+VPN PROTOCOL SCALABILITY ANALYSIS
+================================
+
+Protocol: wireguard
+  - Max Theoretical Connections: 500
+  - Practical Limit (80% CPU): 80 connections
+  - Throughput at Scale: 650 Mbps
+  - Estimated Users (100Mbps/user): 650 users
+
+Protocol: openvpn
+  - Max Theoretical Connections: 100
+  - Practical Limit (80% CPU): 25 connections
+  - Throughput at Scale: 80 Mbps
+  - Estimated Users (100Mbps/user): 80 users
+
+Protocol: ipsec
+  - Max Theoretical Connections: 200
+  - Practical Limit (80% CPU): 45 connections
+  - Throughput at Scale: 280 Mbps
+  - Estimated Users (100Mbps/user): 280 users
+
+SCALABILITY RANKING:
+1. WireGuard - Excellent scalability, efficient resource usage
+2. IPSec - Good scalability, moderate resource usage
+3. OpenVPN - Limited scalability, high resource usage

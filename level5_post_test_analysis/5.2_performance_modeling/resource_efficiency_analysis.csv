@@ -1,0 +1,4 @@
+protocol,avg_efficiency_score,max_connections_80pct_cpu,cpu_usage_at_50_connections
+wireguard,69.85,100,35.61
+openvpn,25.49,25,97.61
+ipsec,41.82,50,69.55

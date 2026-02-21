@@ -1,0 +1,22 @@
+Endurance Test Results: ipsec
+Start Time: Rab 22 Okt 2025 17:53:40 WIB
+Duration: 120 seconds (2 minutes)
+=============================
+Initial Memory: 6.621MB
+Initial CPU: 0.00%
+
+
+=== ENDURANCE TEST SUMMARY ===
+Total tests: 9
+Successful tests: 9
+Success rate: 100.00%
+Average throughput: 24907.06 Mbps
+Average latency: 66.47 ms
+
+Resource Usage:
+  Initial Memory: 6.621MB
+  Final Memory: 6.629MB
+  Initial CPU: 0.00%
+  Final CPU: 0.00%
+
+End Time: Rab 22 Okt 2025 17:55:56 WIB

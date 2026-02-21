@@ -1,0 +1,16 @@
+High Connection Load Test: wireguard
+Start Time: Rab 22 Okt 2025 18:14:07 WIB
+Container: wireguard-vpn
+Target: 127.0.0.1:5201 (INTERNAL)
+Method: Internal iperf3 server
+=============================
+Starting 3 concurrent internal connections...
+Test duration: 6 seconds per connection
+Connection 2: FAILED (0s)
+Connection 3: FAILED (0s)
+
+High load test completed: 0/3 successful
+End Time: Rab 22 Okt 2025 18:14:22 WIB
+
+=== PERFORMANCE ASSESSMENT ===
+RESULT: POOR - Few internal connections successful

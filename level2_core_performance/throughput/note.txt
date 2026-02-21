@@ -1,0 +1,4 @@
+Performance Analysis:
+WireGuard shows 7.1% higher single-direction throughput than IPSec
+WireGuard shows 7.5% higher bidirectional throughput than IPSec
+OpenVPN performs competitively with 96.0% of WireGuard's single-direction throughput

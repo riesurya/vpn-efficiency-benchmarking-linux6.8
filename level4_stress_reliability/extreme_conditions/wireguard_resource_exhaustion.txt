@@ -1,0 +1,15 @@
+Resource Exhaustion Test: wireguard
+Start Time: Rab 22 Okt 2025 18:32:39 WIB
+=============================
+1. CPU Exhaustion Test:
+   Started CPU stress process 1
+   Started CPU stress process 2
+   Started CPU stress process 3
+   Started CPU stress process 4
+   Testing functionality under CPU stress:
+      ✅ Network functional under CPU stress
+
+2. Memory Pressure Test:
+   Started memory pressure process
+   Testing functionality under memory pressure:
+      ✅ Network functional under memory pressure

@@ -1,0 +1,4 @@
+protocol,mean_throughput,n,std_error,ci_lower,ci_upper
+wireguard,842.79,30,7.66,827.78,857.8
+openvpn,316.82,30,5.03,306.96,326.68
+ipsec,477.16,30,6.69,464.05,490.28

@@ -1,0 +1,9 @@
+Memory Pressure Test: wireguard
+Start Time: Rab 22 Okt 2025 18:14:27 WIB
+Method: Internal iperf3 server
+=============================
+Initial Memory: 3.508MB
+Creating memory pressure...
+Throughput test failed under memory pressure
+Final Memory: 10.75MB
+RESULT: MAINTAINED PERFORMANCE

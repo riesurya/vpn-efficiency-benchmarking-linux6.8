@@ -1,0 +1,439 @@
+Failure Recovery Test: wireguard
+Start Time: Rab 22 Okt 2025 17:57:27 WIB
+Container: wireguard-vpn
+=============================
+
+=== PHASE 1: PRE-RESTART BASELINE ===
+[0;34m[RECOVERY][0m Testing Pre-restart connectivity for wireguard...
+[0;32m[RECOVERY][0m wireguard Pre-restart: Gateway ping successful
+[0;32m[RECOVERY][0m wireguard Pre-restart: External ping successful
+[0;32m[RECOVERY][0m wireguard Pre-restart: DNS resolution successful
+[0;32m[RECOVERY][0m wireguard Pre-restart: Throughput test successful
+PING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.096 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.087 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.122 ms
+
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2025ms
+rtt min/avg/max/mdev = 0.087/0.101/0.122/0.014 ms
+Gateway Ping: SUCCESS
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=58.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=54.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=26.0 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 26.014/46.430/58.529/14.519 ms
+External Ping: SUCCESS
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 172.253.118.113
+Name:	google.com
+Address: 172.253.118.102
+Name:	google.com
+Address: 172.253.118.139
+Name:	google.com
+Address: 172.253.118.100
+Name:	google.com
+Address: 172.253.118.138
+Name:	google.com
+Address: 172.253.118.101
+
+Non-authoritative answer:
+Name:	google.com
+Address: 2404:6800:4003:c06::66
+Name:	google.com
+Address: 2404:6800:4003:c06::65
+Name:	google.com
+Address: 2404:6800:4003:c06::71
+Name:	google.com
+Address: 2404:6800:4003:c06::8a
+
+DNS Resolution: SUCCESS
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"172.19.0.8",
+				"local_port":	43524,
+				"remote_host":	"172.17.0.1",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.19.1",
+		"system_info":	"Linux a66dc43db8c7 6.8.0-85-generic #85-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 18 15:26:59 UTC 2025 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 22 Oct 2025 10:57:32 UTC",
+			"timesecs":	1761130652
+		},
+		"connecting_to":	{
+			"host":	"172.17.0.1",
+			"port":	5201
+		},
+		"cookie":	"slym5cj3hktqqc75b6vmh4v2o65gqwo6addc",
+		"tcp_mss_default":	1448,
+		"target_bitrate":	0,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	16384,
+		"rcvbuf_actual":	131072,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	2,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	0,
+			"bidir":	0,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	5,
+					"start":	0,
+					"end":	1.000368,
+					"seconds":	1.0003679990768433,
+					"bytes":	2793668608,
+					"bits_per_second":	22341127349.759651,
+					"retransmits":	0,
+					"snd_cwnd":	1571080,
+					"snd_wnd":	-1,
+					"rtt":	41,
+					"rttvar":	20,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000368,
+				"seconds":	1.0003679990768433,
+				"bytes":	2793668608,
+				"bits_per_second":	22341127349.759651,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	1.000368,
+					"end":	2.000456,
+					"seconds":	1.0000879764556885,
+					"bytes":	2897084416,
+					"bits_per_second":	23174636505.618366,
+					"retransmits":	0,
+					"snd_cwnd":	1571080,
+					"snd_wnd":	-1,
+					"rtt":	36,
+					"rttvar":	4,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	1.000368,
+				"end":	2.000456,
+				"seconds":	1.0000879764556885,
+				"bytes":	2897084416,
+				"bits_per_second":	23174636505.618366,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.000456,
+					"seconds":	2.000456,
+					"bytes":	5755895808,
+					"bits_per_second":	23018335051.608234,
+					"retransmits":	0,
+					"max_snd_cwnd":	1571080,
+					"max_snd_wnd":	0,
+					"max_rtt":	41,
+					"min_rtt":	36,
+					"mean_rtt":	38,
+					"sender":	true
+				},
+				"receiver":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.00052,
+					"seconds":	2.000456,
+					"bytes":	5756026880,
+					"bits_per_second":	23018122808.0699,
+					"sender":	true
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	2.000456,
+			"seconds":	2.000456,
+			"bytes":	5755895808,
+			"bits_per_second":	23018335051.608234,
+			"retransmits":	0,
+			"sender":	true
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	2.00052,
+			"seconds":	2.00052,
+			"bytes":	5756026880,
+			"bits_per_second":	23018122808.0699,
+			"sender":	true
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	99.844452505798671,
+			"host_user":	0.65012156988544545,
+			"host_system":	99.194330935913229,
+			"remote_total":	79.2056432142568,
+			"remote_user":	2.1263025089949723,
+			"remote_system":	77.079340705261828
+		},
+		"sender_tcp_congestion":	"cubic",
+		"receiver_tcp_congestion":	"cubic"
+	}
+}
+Throughput Test: SUCCESS
+
+Pre-restart Resources:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.168MiB / 17.39GiB   0.02%     245MB / 168GB   1.47MB / 0B   3
+
+=== PHASE 2: CONTAINER RESTART ===
+Restarting container at Rab 22 Okt 2025 17:57:36 WIB
+wireguard-vpn
+Restart command successful
+Monitoring container restart...
+Container ready after 0s
+Restart completed in 11s
+
+=== PHASE 3: POST-RESTART VERIFICATION ===
+[0;34m[RECOVERY][0m Testing Post-restart connectivity for wireguard...
+[0;32m[RECOVERY][0m wireguard Post-restart: Gateway ping successful
+[0;32m[RECOVERY][0m wireguard Post-restart: External ping successful
+[0;32m[RECOVERY][0m wireguard Post-restart: DNS resolution successful
+[0;32m[RECOVERY][0m wireguard Post-restart: Throughput test successful
+PING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.111 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.091 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.119 ms
+
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2056ms
+rtt min/avg/max/mdev = 0.091/0.107/0.119/0.011 ms
+Gateway Ping: SUCCESS
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=62.6 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=67.5 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=57.8 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 57.796/62.629/67.531/3.974 ms
+External Ping: SUCCESS
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 172.253.118.102
+Name:	google.com
+Address: 172.253.118.113
+Name:	google.com
+Address: 172.253.118.101
+Name:	google.com
+Address: 172.253.118.138
+Name:	google.com
+Address: 172.253.118.100
+Name:	google.com
+Address: 172.253.118.139
+
+Non-authoritative answer:
+Name:	google.com
+Address: 2404:6800:4003:c06::65
+Name:	google.com
+Address: 2404:6800:4003:c06::66
+Name:	google.com
+Address: 2404:6800:4003:c06::8a
+Name:	google.com
+Address: 2404:6800:4003:c06::71
+
+DNS Resolution: SUCCESS
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"172.19.0.8",
+				"local_port":	34716,
+				"remote_host":	"172.17.0.1",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.19.1",
+		"system_info":	"Linux a66dc43db8c7 6.8.0-85-generic #85-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 18 15:26:59 UTC 2025 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 22 Oct 2025 10:58:01 UTC",
+			"timesecs":	1761130681
+		},
+		"connecting_to":	{
+			"host":	"172.17.0.1",
+			"port":	5201
+		},
+		"cookie":	"jip4kelb6ozjq2svxlxmgsldm3edvahuw4wj",
+		"tcp_mss_default":	1448,
+		"target_bitrate":	0,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	16384,
+		"rcvbuf_actual":	131072,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	2,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	0,
+			"bidir":	0,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	5,
+					"start":	0,
+					"end":	1.000348,
+					"seconds":	1.0003479719161987,
+					"bytes":	3011379200,
+					"bits_per_second":	24082653512.909962,
+					"retransmits":	0,
+					"snd_cwnd":	689248,
+					"snd_wnd":	-1,
+					"rtt":	42,
+					"rttvar":	6,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000348,
+				"seconds":	1.0003479719161987,
+				"bytes":	3011379200,
+				"bits_per_second":	24082653512.909962,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	1.000348,
+					"end":	2.000436,
+					"seconds":	1.0000879764556885,
+					"bytes":	2987524096,
+					"bits_per_second":	23898090298.7178,
+					"retransmits":	0,
+					"snd_cwnd":	1167088,
+					"snd_wnd":	-1,
+					"rtt":	43,
+					"rttvar":	5,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	1.000348,
+				"end":	2.000436,
+				"seconds":	1.0000879764556885,
+				"bytes":	2987524096,
+				"bits_per_second":	23898090298.7178,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.000436,
+					"seconds":	2.000436,
+					"bytes":	5999034368,
+					"bits_per_second":	23990907454.174988,
+					"retransmits":	0,
+					"max_snd_cwnd":	1167088,
+					"max_snd_wnd":	0,
+					"max_rtt":	43,
+					"min_rtt":	42,
+					"mean_rtt":	42,
+					"sender":	true
+				},
+				"receiver":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.000533,
+					"seconds":	2.000436,
+					"bytes":	5999165440,
+					"bits_per_second":	23990268353.4838,
+					"sender":	true
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	2.000436,
+			"seconds":	2.000436,
+			"bytes":	5999034368,
+			"bits_per_second":	23990907454.174988,
+			"retransmits":	0,
+			"sender":	true
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	2.000533,
+			"seconds":	2.000533,
+			"bytes":	5999165440,
+			"bits_per_second":	23990268353.4838,
+			"sender":	true
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	99.8370700793515,
+			"host_user":	0.77957545289121921,
+			"host_system":	99.05744466328315,
+			"remote_total":	77.846241975367874,
+			"remote_user":	2.1199574718866074,
+			"remote_system":	75.7263844755391
+		},
+		"sender_tcp_congestion":	"cubic",
+		"receiver_tcp_congestion":	"cubic"
+	}
+}
+Throughput Test: SUCCESS
+
+Post-restart Resources:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O   PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     1.762MiB / 17.39GiB   0.01%     8.85MB / 6.01GB   0B / 0B     3
+
+=== PHASE 4: RECOVERY ASSESSMENT ===
+✅ FULL RECOVERY: Network fully restored
+
+End Time: Rab 22 Okt 2025 17:58:05 WIB

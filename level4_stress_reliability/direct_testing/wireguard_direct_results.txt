@@ -1,0 +1,12 @@
+Direct Stress Test Results: wireguard
+Start Time: Rab 22 Okt 2025 09:16:20 WIB
+Method: Direct command execution without functions
+Container: wireguard-vpn
+Target: 172.17.0.1:5201
+=========================
+Test 1: REAL - 20590 Mbps
+Test 2: REAL - 24110 Mbps
+Test 3: REAL - 26004 Mbps
+
+=== SUMMARY ===
+Completed: Rab 22 Okt 2025 09:16:37 WIB

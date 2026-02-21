@@ -1,0 +1,5 @@
+Debug Load Test Results: wireguard
+Start Time: Rab 22 Okt 2025 08:50:05 WIB
+Methodology: Debug testing with multiple approaches
+Container: wireguard-vpn
+=========================

@@ -1,0 +1,18 @@
+Container Recovery Test: ipsec
+Start Time: Rab 22 Okt 2025 18:38:53 WIB
+=============================
+Pre-restart functionality:
+   ✅ Network working before restart
+
+Restarting container...
+   ✅ Restart command successful
+   ✅ Container recovered in 11s
+
+Post-restart verification:
+   ✅ Network restored
+   ✅ HTTP restored
+
+RECOVERY SUMMARY:
+Recovery time: 11s
+Post-restart tests passed: 2/2
+RESULT: EXCELLENT RECOVERY

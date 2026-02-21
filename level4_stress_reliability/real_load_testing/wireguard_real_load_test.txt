@@ -1,0 +1,6 @@
+Real Data Load Test Results: wireguard
+Start Time: Rab 22 Okt 2025 09:01:54 WIB
+Methodology: Working iperf3 approach with real measurements
+Container: wireguard-vpn
+Target: 172.17.0.1:5201
+=========================

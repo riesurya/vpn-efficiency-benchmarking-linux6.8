@@ -1,0 +1,20 @@
+Stress Test Results: ipsec
+Start Time: Rab 22 Okt 2025 17:20:10 WIB
+Container: ipsec-vpn
+Target: 172.17.0.1:5201
+Method: Direct execution with timeout
+=========================
+Load Test 1: REAL - 25014 Mbps
+Load Test 2: REAL - 20387 Mbps
+Load Test 3: REAL - 20314 Mbps
+
+=== LOAD TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 21905 Mbps
+All results: 25014 20387 20314 Mbps
+
+=== ENDURANCE TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 24842 Mbps
+All results: 25837 24699 23990 Mbps
+End Time: Rab 22 Okt 2025 17:21:00 WIB

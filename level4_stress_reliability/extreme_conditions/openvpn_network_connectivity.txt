@@ -1,0 +1,21 @@
+Network Connectivity Test: openvpn
+Start Time: Rab 22 Okt 2025 18:37:38 WIB
+=============================
+1. Basic Ping Test:
+   ✅ Ping successful
+
+2. DNS Resolution Test:
+   ✅ DNS resolution successful
+
+3. HTTP Connectivity Test:
+   ✅ HTTP connectivity successful
+
+4. Rapid Connection Test:
+   Successful pings: 5/5
+
+5. Resource Usage:
+CONTAINER ID   NAME          CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O    PIDS
+9772d345c903   openvpn-vpn   0.00%     1.191MiB / 17.39GiB   0.01%     8.97MB / 6.16GB   0B / 4.1kB   2
+
+SUMMARY: 5/5 tests passed (100%)
+RESULT: EXCELLENT

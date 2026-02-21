@@ -1,0 +1,4 @@
+protocol,throughput_at_1_conn,throughput_at_50_conn,throughput_degradation_pct,latency_at_1_conn,latency_at_50_conn,latency_increase_pct
+wireguard,858.07,747.77,12.85,11.13,16.14,44.99
+openvpn,331.74,124.05,62.6,25.95,72.85,180.73
+ipsec,485.43,316.47,34.81,18.07,43.68,141.75

@@ -1,0 +1,23 @@
+Resource Stress Test: wireguard
+Start Time: Rab 22 Okt 2025 18:37:01 WIB
+=============================
+Baseline Resources:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.293MiB / 17.39GiB   0.02%     207MB / 142GB   2.27MB / 52.5MB   2
+
+Creating CPU load...
+Functionality during CPU load:
+   ✅ Network functional during CPU load
+
+Resources during CPU load:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.293MiB / 17.39GiB   0.02%     207MB / 142GB   2.27MB / 52.5MB   2
+
+Recovery after CPU load:
+   ✅ Fully recovered after CPU load
+
+Final Resources:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.293MiB / 17.39GiB   0.02%     207MB / 142GB   2.27MB / 52.5MB   2
+End Time: Rab 22 Okt 2025 18:37:14 WIB
+RESULT: STABLE

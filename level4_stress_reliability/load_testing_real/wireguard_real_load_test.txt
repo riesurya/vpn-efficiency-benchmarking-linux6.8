@@ -1,0 +1,6 @@
+Real Data Load Test Results: wireguard
+Start Time: Rab 22 Okt 2025 08:36:19 WIB
+Methodology: Robust external iperf3 with multiple fallback approaches
+Target: Host iperf3 server (0.0.0.0:5201)
+Container: wireguard-vpn
+=========================

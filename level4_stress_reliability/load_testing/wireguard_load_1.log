@@ -1,0 +1,2 @@
+Test 1 command: iperf3 -c  -p 5201 -t 12 -P 2 -J
+TIMEOUT_FAILED

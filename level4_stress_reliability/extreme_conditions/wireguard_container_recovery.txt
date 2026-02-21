@@ -1,0 +1,18 @@
+Container Recovery Test: wireguard
+Start Time: Rab 22 Okt 2025 18:37:17 WIB
+=============================
+Pre-restart functionality:
+   ✅ Network working before restart
+
+Restarting container...
+   ✅ Restart command successful
+   ✅ Container recovered in 10s
+
+Post-restart verification:
+   ✅ Network restored
+   ✅ HTTP restored
+
+RECOVERY SUMMARY:
+Recovery time: 10s
+Post-restart tests passed: 2/2
+RESULT: EXCELLENT RECOVERY

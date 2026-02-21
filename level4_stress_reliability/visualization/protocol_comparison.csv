@@ -1,0 +1,10 @@
+protocol,test_number,throughput_mbps,test_type
+wireguard,1,690,simulated
+wireguard,2,710,simulated
+wireguard,3,730,simulated
+openvpn,1,290,simulated
+openvpn,2,310,simulated
+openvpn,3,330,simulated
+ipsec,1,490,simulated
+ipsec,2,510,simulated
+ipsec,3,530,simulated

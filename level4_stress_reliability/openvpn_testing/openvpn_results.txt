@@ -1,0 +1,20 @@
+Stress Test Results: openvpn
+Start Time: Rab 22 Okt 2025 17:19:15 WIB
+Container: openvpn-vpn
+Target: 172.17.0.1:5201
+Method: Direct execution with timeout
+=========================
+Load Test 1: REAL - 24388 Mbps
+Load Test 2: REAL - 26267 Mbps
+Load Test 3: REAL - 21029 Mbps
+
+=== LOAD TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 23894 Mbps
+All results: 24388 26267 21029 Mbps
+
+=== ENDURANCE TESTING SUMMARY ===
+Real measurements: 3/3
+Average throughput: 25130 Mbps
+All results: 24601 24997 25794 Mbps
+End Time: Rab 22 Okt 2025 17:20:05 WIB

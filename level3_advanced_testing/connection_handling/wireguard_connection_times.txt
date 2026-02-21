@@ -1,0 +1,7 @@
+Connection Establishment Times for wireguard
+==========================================
+Attempt 1: .101769673s
+Attempt 2: .097080781s
+Attempt 3: .094330205s
+Attempt 4: .115736051s
+Attempt 5: .088388870s

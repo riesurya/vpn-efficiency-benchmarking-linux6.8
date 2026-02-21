@@ -1,0 +1,4 @@
+protocol,regression_detected,regression_start,severity
+wireguard,True,78.0,High
+openvpn,True,185.0,Medium
+ipsec,False,,None

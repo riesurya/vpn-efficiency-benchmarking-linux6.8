@@ -1,0 +1,3 @@
+=== Simple Speed Test ===
+Testing basic transfer speed...
+DD test:

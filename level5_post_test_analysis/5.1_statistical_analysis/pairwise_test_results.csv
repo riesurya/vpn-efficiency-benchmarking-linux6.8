@@ -1,0 +1,4 @@
+comparison,mean_difference,t_statistic,p_value,significant,bonferroni_alpha
+wireguard vs openvpn,525.97,57.4022,8.390621000627124e-53,True,0.016666666666666666
+wireguard vs ipsec,365.63,35.9528,2.4079294011072986e-41,True,0.016666666666666666
+openvpn vs ipsec,-160.34,-19.1512,9.37872111128591e-27,True,0.016666666666666666

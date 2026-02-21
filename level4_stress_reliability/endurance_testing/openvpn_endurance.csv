@@ -1,0 +1,13 @@
+timestamp,throughput_mbps,test_type,protocol
+08:13:55,285,simulated,openvpn
+08:14:05,315,simulated,openvpn
+08:14:15,345,simulated,openvpn
+08:14:25,255,simulated,openvpn
+08:14:35,285,simulated,openvpn
+08:14:45,315,simulated,openvpn
+08:14:55,345,simulated,openvpn
+08:15:05,255,simulated,openvpn
+08:15:15,285,simulated,openvpn
+08:15:25,315,simulated,openvpn
+08:15:35,345,simulated,openvpn
+08:15:45,255,simulated,openvpn

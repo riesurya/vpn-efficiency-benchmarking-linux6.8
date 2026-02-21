@@ -1,0 +1,7 @@
+use_case,wireguard,openvpn,ipsec
+High Performance,95,60,75
+Enterprise Security,80,85,90
+Easy Deployment,75,80,65
+Mobile Users,85,75,70
+Resource Constrained,90,55,70
+Cross Platform,70,95,85

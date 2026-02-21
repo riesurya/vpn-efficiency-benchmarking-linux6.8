@@ -1,0 +1,19 @@
+MINIMAL WORKING TEST REPORT
+===========================
+Generated: Rab 22 Okt 2025 08:53:27 WIB
+
+APPROACHES TESTED:
+1. Interactive docker exec
+2. Echo pipe to bash  
+3. Script file in container
+4. Basic connectivity tests
+5. Simple speed estimation
+
+RESULTS:
+
+wireguard:
+Successful approaches: 5/5
+Average throughput (real): 8781.37 Mbps
+
+CONCLUSION:
+Minimal testing completed with multiple approaches to identify working method.

@@ -1,0 +1,16 @@
+protocol,connections,predicted_cpu_usage,efficiency_score
+wireguard,1,14.7,85.3
+wireguard,10,18.54,81.46
+wireguard,25,24.94,75.06
+wireguard,50,35.61,64.39
+wireguard,100,56.94,43.06
+openvpn,1,46.95,53.05
+openvpn,10,56.25,43.75
+openvpn,25,71.76,28.24
+openvpn,50,97.61,2.39
+openvpn,100,100.0,0.0
+ipsec,1,32.02,67.98
+ipsec,10,38.92,61.08
+ipsec,25,50.4,49.6
+ipsec,50,69.55,30.45
+ipsec,100,100.0,0.0

@@ -1,0 +1,7 @@
+Connection Establishment Times for ipsec
+==========================================
+Attempt 1: .117237931s
+Attempt 2: .107936890s
+Attempt 3: .097101780s
+Attempt 4: .098859669s
+Attempt 5: .090560141s

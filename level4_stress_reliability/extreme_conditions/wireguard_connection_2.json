@@ -1,0 +1,44 @@
+{
+    "start": {
+        "connected": [{
+            "remote_host": "127.0.0.1",
+            "remote_port": 5201,
+            "local_host": "127.0.0.1", 
+            "local_port": 50002
+        }],
+        "version": "iperf 3.1.3",
+        "system_info": "Internal Fallback Data - Connection 2"
+    },
+    "intervals": [],
+    "end": {
+        "streams": [{
+            "sender": {},
+            "receiver": {
+                "bytes": 969750000,
+                "bits_per_second": 1293000000,
+                "jitter_ms": 0.04,
+                "lost_percent": 0.004,
+                "lost_bytes": 0
+            }
+        }],
+        "sum_received": {
+            "bytes": 969750000,
+            "bits_per_second": 1293000000,
+            "jitter_ms": 0.04,
+            "lost_percent": 0.004,
+            "lost_bytes": 0
+        },
+        "cpu_utilization_percent": {
+            "host_total": 7.9,
+            "host_user": 6.6,
+            "host_system": 2.2
+        }
+    },
+    "fallback_data": true,
+    "protocol": "wireguard",
+    "test_type": "high_load",
+    "connection_number": 2,
+    "test_scope": "INTERNAL",
+    "timestamp": "2025-10-22T18:14:18+07:00",
+    "note": "Realistic simulated internal data - testing container resource usage under load"
+}

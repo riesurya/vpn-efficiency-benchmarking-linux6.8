@@ -1,0 +1,4 @@
+protocol,config_complexity,common_issues,avg_setup_time_min,documentation_quality,risk_score,risk_level
+wireguard,70,5,30,75,21.5,Low
+openvpn,85,12,45,95,29.799999999999997,Low
+ipsec,90,15,60,80,37.0,Low

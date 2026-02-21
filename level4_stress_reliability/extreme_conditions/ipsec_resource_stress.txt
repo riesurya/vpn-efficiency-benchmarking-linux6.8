@@ -1,0 +1,23 @@
+Resource Stress Test: ipsec
+Start Time: Rab 22 Okt 2025 18:38:38 WIB
+=============================
+Baseline Resources:
+CONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O    PIDS
+5a66bcbc28e4   ipsec-vpn   0.00%     1.164MiB / 17.39GiB   0.01%     9.39MB / 6.3GB   0B / 4.1kB   2
+
+Creating CPU load...
+Functionality during CPU load:
+   ✅ Network functional during CPU load
+
+Resources during CPU load:
+CONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O    PIDS
+5a66bcbc28e4   ipsec-vpn   0.00%     1.164MiB / 17.39GiB   0.01%     9.39MB / 6.3GB   0B / 4.1kB   2
+
+Recovery after CPU load:
+   ✅ Fully recovered after CPU load
+
+Final Resources:
+CONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O    PIDS
+5a66bcbc28e4   ipsec-vpn   0.00%     1.164MiB / 17.39GiB   0.01%     9.4MB / 6.3GB   0B / 4.1kB   2
+End Time: Rab 22 Okt 2025 18:38:50 WIB
+RESULT: STABLE

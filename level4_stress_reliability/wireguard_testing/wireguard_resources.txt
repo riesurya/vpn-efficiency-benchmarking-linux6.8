@@ -1,0 +1,2 @@
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O        BLOCK I/O     PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.035MiB / 17.39GiB   0.02%     122MB / 82GB   1.33MB / 0B   3

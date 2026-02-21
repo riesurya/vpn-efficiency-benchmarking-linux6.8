@@ -1,0 +1,33 @@
+{
+    "start": {
+        "connected": [{"remote_host": "127.0.0.1", "remote_port": 5201}],
+        "version": "iperf 3.1.3",
+        "system_info": "Fallback Data - Connection Issues"
+    },
+    "intervals": [],
+    "end": {
+        "streams": [{
+            "sender": {},
+            "receiver": {
+                "bytes": 500000000,
+                "bits_per_second": 320000000,
+                "jitter_ms": 1.2,
+                "lost_percent": 0.1
+            }
+        }],
+        "sum_received": {
+            "bytes": 500000000,
+            "bits_per_second": 320000000,
+            "jitter_ms": 1.2,
+            "lost_percent": 0.1
+        },
+        "cpu_utilization_percent": {
+            "host_total": 8.0,
+            "host_user": 5.0,
+            "host_system": 3.0
+        }
+    },
+    "fallback_data": true,
+    "test_type": "load",
+    "timestamp": "2025-10-22T07:00:37+07:00"
+}

@@ -1,0 +1,28 @@
+Network Stress Test: wireguard
+Start Time: Rab 22 Okt 2025 18:32:28 WIB
+Method: Concurrent ping and curl operations
+=============================
+Baseline Resources:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     2.938MiB / 17.39GiB   0.02%     207MB / 142GB   1.93MB / 53.2kB   2
+DNS operation 2: SUCCESS
+DNS operation 3: SUCCESS
+DNS operation 1: SUCCESS
+HTTP operation 2: SUCCESS
+HTTP operation 1: SUCCESS
+HTTP operation 3: SUCCESS
+Ping operation 2: SUCCESS
+Ping operation 3: SUCCESS
+Ping operation 4: SUCCESS
+Ping operation 1: SUCCESS
+Ping operation 5: SUCCESS
+
+Resources After Stress:
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+a66dc43db8c7   wireguard-vpn   0.00%     3.273MiB / 17.39GiB   0.02%     207MB / 142GB   2.27MB / 53.2kB   2
+
+STRESS TEST SUMMARY:
+Total operations: 0
+Successful: 0
+Success rate: %
+RESULT: POOR - Struggles with network stress

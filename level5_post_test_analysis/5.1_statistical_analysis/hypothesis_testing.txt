@@ -1,0 +1,36 @@
+ONE-WAY ANOVA RESULTS
+=====================
+
+F-statistic: 1693.4956
+P-value: 0.000000
+
+Interpretation: Significant difference between protocols (p < 0.05)
+
+PAIRWISE T-TESTS WITH BONFERRONI CORRECTION
+===========================================
+
+Bonferroni corrected alpha = 0.05 / 3 = 0.0167
+
+wireguard vs openvpn:
+  Mean difference: 525.97 Mbps
+  t-statistic: 57.4022
+  p-value: 0.000000
+  Significant: YES
+
+wireguard vs ipsec:
+  Mean difference: 365.63 Mbps
+  t-statistic: 35.9528
+  p-value: 0.000000
+  Significant: YES
+
+openvpn vs ipsec:
+  Mean difference: -160.34 Mbps
+  t-statistic: -19.1512
+  p-value: 0.000000
+  Significant: YES
+
+SUMMARY OF SIGNIFICANT DIFFERENCES:
+===================================
+• wireguard vs openvpn: 526.0 Mbps higher (p = 0.000000)
+• wireguard vs ipsec: 365.6 Mbps higher (p = 0.000000)
+• openvpn vs ipsec: 160.3 Mbps lower (p = 0.000000)

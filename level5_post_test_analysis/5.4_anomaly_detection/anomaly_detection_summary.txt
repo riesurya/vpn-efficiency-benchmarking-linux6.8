@@ -1,0 +1,26 @@
+ANOMALY DETECTION SUMMARY
+========================
+
+Outlier Analysis:
+    protocol  throughput_outliers  latency_outliers  cpu_outliers  total_outliers  outlier_percentage
+0  wireguard                    7                 6             5              18                 6.0
+1    openvpn                    8                 8             8              24                 8.0
+2      ipsec                    5                 4             3              12                 4.0
+
+Performance Regression:
+    protocol  regression_detected  regression_start severity
+0  wireguard                 True              78.0     High
+1    openvpn                 True             185.0   Medium
+2      ipsec                False               NaN     None
+
+Resource Leaks:
+    protocol  memory_slope  r_squared   p_value  has_memory_leak  avg_memory_usage
+0  wireguard     -0.059167   0.034134  0.198982            False         78.872630
+1    openvpn      0.861644   0.334698  0.000011            False        189.127000
+2      ipsec     -0.019834   0.001267  0.806155            False        119.685699
+
+Key Findings:
+• Monitor OpenVPN for performance regression patterns
+• Watch for memory leaks in long-running OpenVPN instances
+• IPSec shows most stable performance with few anomalies
+• Configuration complexity correlates with operational issues

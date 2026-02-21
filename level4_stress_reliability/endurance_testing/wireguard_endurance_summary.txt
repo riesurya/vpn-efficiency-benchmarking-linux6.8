@@ -1,0 +1,22 @@
+Endurance Test Results: wireguard
+Start Time: Rab 22 Okt 2025 17:48:55 WIB
+Duration: 120 seconds (2 minutes)
+=============================
+Initial Memory: 3.156MB
+Initial CPU: 0.00%
+
+
+=== ENDURANCE TEST SUMMARY ===
+Total tests: 9
+Successful tests: 9
+Success rate: 100.00%
+Average throughput: 23697.09 Mbps
+Average latency: 41.89 ms
+
+Resource Usage:
+  Initial Memory: 3.156MB
+  Final Memory: 3.164MB
+  Initial CPU: 0.00%
+  Final CPU: 0.00%
+
+End Time: Rab 22 Okt 2025 17:51:11 WIB

@@ -1,0 +1,4 @@
+protocol,min_throughput,max_throughput,avg_throughput
+wireguard,650,750,700
+openvpn,250,350,300
+ipsec,450,550,500

@@ -1,0 +1,4 @@
+protocol,performance_per_unit,implementation_cost,maintenance_cost,hardware_requirements,cost_performance_ratio,total_cost_index,value_score
+wireguard,950,70,75,65,13.571428571428571,70.0,13.571428571428571
+openvpn,320,85,80,85,3.764705882352941,83.33333333333333,3.8400000000000003
+ipsec,650,90,85,80,7.222222222222222,85.0,7.647058823529412

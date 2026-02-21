@@ -1,0 +1,439 @@
+Failure Recovery Test: ipsec
+Start Time: Rab 22 Okt 2025 17:59:01 WIB
+Container: ipsec-vpn
+=============================
+
+=== PHASE 1: PRE-RESTART BASELINE ===
+[0;34m[RECOVERY][0m Testing Pre-restart connectivity for ipsec...
+[0;32m[RECOVERY][0m ipsec Pre-restart: Gateway ping successful
+[0;32m[RECOVERY][0m ipsec Pre-restart: External ping successful
+[0;32m[RECOVERY][0m ipsec Pre-restart: DNS resolution successful
+[0;32m[RECOVERY][0m ipsec Pre-restart: Throughput test successful
+PING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.097 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.118 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.084 ms
+
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2052ms
+rtt min/avg/max/mdev = 0.084/0.099/0.118/0.014 ms
+Gateway Ping: SUCCESS
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=31.8 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=27.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=44.7 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 27.034/34.518/44.730/7.477 ms
+External Ping: SUCCESS
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.4.138
+Name:	google.com
+Address: 142.250.4.101
+Name:	google.com
+Address: 142.250.4.113
+Name:	google.com
+Address: 142.250.4.100
+Name:	google.com
+Address: 142.250.4.102
+Name:	google.com
+Address: 142.250.4.139
+
+Non-authoritative answer:
+Name:	google.com
+Address: 2404:6800:4003:c06::8a
+Name:	google.com
+Address: 2404:6800:4003:c06::65
+Name:	google.com
+Address: 2404:6800:4003:c06::66
+Name:	google.com
+Address: 2404:6800:4003:c06::71
+
+DNS Resolution: SUCCESS
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"172.19.0.6",
+				"local_port":	56328,
+				"remote_host":	"172.17.0.1",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.19.1",
+		"system_info":	"Linux 5a66bcbc28e4 6.8.0-85-generic #85-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 18 15:26:59 UTC 2025 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 22 Oct 2025 10:59:06 UTC",
+			"timesecs":	1761130746
+		},
+		"connecting_to":	{
+			"host":	"172.17.0.1",
+			"port":	5201
+		},
+		"cookie":	"uuq6ojj2wth6qwbjayjukexsojd7ppn2y6ba",
+		"tcp_mss_default":	1448,
+		"target_bitrate":	0,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	16384,
+		"rcvbuf_actual":	131072,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	2,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	0,
+			"bidir":	0,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	5,
+					"start":	0,
+					"end":	1.000777,
+					"seconds":	1.000777006149292,
+					"bytes":	3068919808,
+					"bits_per_second":	24532296718.5934,
+					"retransmits":	0,
+					"snd_cwnd":	1600040,
+					"snd_wnd":	-1,
+					"rtt":	39,
+					"rttvar":	8,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000777,
+				"seconds":	1.000777006149292,
+				"bytes":	3068919808,
+				"bits_per_second":	24532296718.5934,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	1.000777,
+					"end":	2.001087,
+					"seconds":	1.000309944152832,
+					"bytes":	2783707136,
+					"bits_per_second":	22262756876.680153,
+					"retransmits":	0,
+					"snd_cwnd":	2251640,
+					"snd_wnd":	-1,
+					"rtt":	37,
+					"rttvar":	18,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	1.000777,
+				"end":	2.001087,
+				"seconds":	1.000309944152832,
+				"bytes":	2783707136,
+				"bits_per_second":	22262756876.680153,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.001087,
+					"seconds":	2.001087,
+					"bytes":	6093668352,
+					"bits_per_second":	24361432969.181248,
+					"retransmits":	0,
+					"max_snd_cwnd":	2251640,
+					"max_snd_wnd":	0,
+					"max_rtt":	39,
+					"min_rtt":	37,
+					"mean_rtt":	38,
+					"sender":	true
+				},
+				"receiver":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.001202,
+					"seconds":	2.001087,
+					"bytes":	6093799424,
+					"bits_per_second":	24360557001.242252,
+					"sender":	true
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	2.001087,
+			"seconds":	2.001087,
+			"bytes":	6093668352,
+			"bits_per_second":	24361432969.181248,
+			"retransmits":	0,
+			"sender":	true
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	2.001202,
+			"seconds":	2.001202,
+			"bytes":	6093799424,
+			"bits_per_second":	24360557001.242252,
+			"sender":	true
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	99.591735401780724,
+			"host_user":	0.52490449016128782,
+			"host_system":	99.06693081730846,
+			"remote_total":	79.2462890099929,
+			"remote_user":	1.9486132945036472,
+			"remote_system":	77.2977256850578
+		},
+		"sender_tcp_congestion":	"cubic",
+		"receiver_tcp_congestion":	"cubic"
+	}
+}
+Throughput Test: SUCCESS
+
+Pre-restart Resources:
+CONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O        PIDS
+5a66bcbc28e4   ipsec-vpn   0.00%     6.629MiB / 17.39GiB   0.04%     251MB / 169GB   6.22MB / 4.1kB   3
+
+=== PHASE 2: CONTAINER RESTART ===
+Restarting container at Rab 22 Okt 2025 17:59:10 WIB
+ipsec-vpn
+Restart command successful
+Monitoring container restart...
+Container ready after 0s
+Restart completed in 10s
+
+=== PHASE 3: POST-RESTART VERIFICATION ===
+[0;34m[RECOVERY][0m Testing Post-restart connectivity for ipsec...
+[0;32m[RECOVERY][0m ipsec Post-restart: Gateway ping successful
+[0;32m[RECOVERY][0m ipsec Post-restart: External ping successful
+[0;32m[RECOVERY][0m ipsec Post-restart: DNS resolution successful
+[0;32m[RECOVERY][0m ipsec Post-restart: Throughput test successful
+PING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.134 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.123 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.077 ms
+
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2064ms
+rtt min/avg/max/mdev = 0.077/0.111/0.134/0.024 ms
+Gateway Ping: SUCCESS
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=30.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=63.9 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=61.9 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 30.185/51.982/63.866/15.434 ms
+External Ping: SUCCESS
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 2404:6800:4003:c06::8a
+Name:	google.com
+Address: 2404:6800:4003:c06::71
+Name:	google.com
+Address: 2404:6800:4003:c06::65
+Name:	google.com
+Address: 2404:6800:4003:c06::66
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.4.100
+Name:	google.com
+Address: 142.250.4.101
+Name:	google.com
+Address: 142.250.4.102
+Name:	google.com
+Address: 142.250.4.113
+Name:	google.com
+Address: 142.250.4.138
+Name:	google.com
+Address: 142.250.4.139
+
+DNS Resolution: SUCCESS
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"172.19.0.6",
+				"local_port":	59902,
+				"remote_host":	"172.17.0.1",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.19.1",
+		"system_info":	"Linux 5a66bcbc28e4 6.8.0-85-generic #85-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 18 15:26:59 UTC 2025 x86_64",
+		"timestamp":	{
+			"time":	"Wed, 22 Oct 2025 10:59:35 UTC",
+			"timesecs":	1761130775
+		},
+		"connecting_to":	{
+			"host":	"172.17.0.1",
+			"port":	5201
+		},
+		"cookie":	"vzojrv6e5ikri5qgeosd4ohjri5m7qaqmgcg",
+		"tcp_mss_default":	1448,
+		"target_bitrate":	0,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	16384,
+		"rcvbuf_actual":	131072,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	2,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	0,
+			"bidir":	0,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	5,
+					"start":	0,
+					"end":	1.001044,
+					"seconds":	1.0010440349578857,
+					"bytes":	3189243904,
+					"bits_per_second":	25487341556.431511,
+					"retransmits":	0,
+					"snd_cwnd":	667528,
+					"snd_wnd":	-1,
+					"rtt":	34,
+					"rttvar":	11,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.001044,
+				"seconds":	1.0010440349578857,
+				"bytes":	3189243904,
+				"bits_per_second":	25487341556.431511,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}, {
+			"streams":	[{
+					"socket":	5,
+					"start":	1.001044,
+					"end":	2.000849,
+					"seconds":	0.999804973602295,
+					"bytes":	2811887616,
+					"bits_per_second":	22499488922.274715,
+					"retransmits":	0,
+					"snd_cwnd":	667528,
+					"snd_wnd":	-1,
+					"rtt":	35,
+					"rttvar":	14,
+					"pmtu":	1500,
+					"omitted":	false,
+					"sender":	true
+				}],
+			"sum":	{
+				"start":	1.001044,
+				"end":	2.000849,
+				"seconds":	0.999804973602295,
+				"bytes":	2811887616,
+				"bits_per_second":	22499488922.274715,
+				"retransmits":	0,
+				"omitted":	false,
+				"sender":	true
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.000849,
+					"seconds":	2.000849,
+					"bytes":	6290145280,
+					"bits_per_second":	25149904985.333725,
+					"retransmits":	0,
+					"max_snd_cwnd":	667528,
+					"max_snd_wnd":	0,
+					"max_rtt":	35,
+					"min_rtt":	34,
+					"mean_rtt":	34,
+					"sender":	true
+				},
+				"receiver":	{
+					"socket":	5,
+					"start":	0,
+					"end":	2.001005,
+					"seconds":	2.000849,
+					"bytes":	6290276352,
+					"bits_per_second":	25148468302.6779,
+					"sender":	true
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	2.000849,
+			"seconds":	2.000849,
+			"bytes":	6290145280,
+			"bits_per_second":	25149904985.333725,
+			"retransmits":	0,
+			"sender":	true
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	2.001005,
+			"seconds":	2.001005,
+			"bytes":	6290276352,
+			"bits_per_second":	25148468302.6779,
+			"sender":	true
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	100.290209851348,
+			"host_user":	0.596756184257527,
+			"host_system":	99.6934536670905,
+			"remote_total":	79.638314098124056,
+			"remote_user":	1.7258715313905222,
+			"remote_system":	77.9124925412965
+		},
+		"sender_tcp_congestion":	"cubic",
+		"receiver_tcp_congestion":	"cubic"
+	}
+}
+Throughput Test: SUCCESS
+
+Post-restart Resources:
+CONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O   PIDS
+5a66bcbc28e4   ipsec-vpn   0.00%     1.766MiB / 17.39GiB   0.01%     9.39MB / 6.3GB   0B / 0B     3
+
+=== PHASE 4: RECOVERY ASSESSMENT ===
+✅ FULL RECOVERY: Network fully restored
+
+End Time: Rab 22 Okt 2025 17:59:39 WIB

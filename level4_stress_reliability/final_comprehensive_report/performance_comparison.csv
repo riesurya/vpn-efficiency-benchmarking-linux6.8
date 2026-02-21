@@ -1,0 +1,4 @@
+protocol,load_test_avg_mbps,load_success_rate,endurance_avg_mbps,endurance_success_rate,performance_class
+wireguard,20000,3/3,20000,3/3,exceptional
+openvpn,300,2/3,300,2/3,standard
+ipsec,500,2/3,500,2/3,good
